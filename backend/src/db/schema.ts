@@ -21,3 +21,6 @@ export const ticketsTable = pgTable("tickets", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
   completedAt: timestamp("completed_at"),
 });
+
+export type Ticket = typeof ticketsTable.$inferSelect;
+export type NewTicket = typeof ticketsTable.$inferInsert;
