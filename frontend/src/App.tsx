@@ -41,7 +41,7 @@ function App() {
         <SummaryCard title='Cancelados' count={0} color='red' />
         <SummaryCard title='Improdutivos' count={0} color='yellow' />
       </section>
-      <section id="productivity-charts">
+      <section id="productivity-charts" className='grid grid-cols-1 sm:grid-cols-2 gap-2'>
         <JobsChartPie />
       </section>
     </main>
