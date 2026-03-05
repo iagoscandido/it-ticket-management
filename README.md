@@ -7,15 +7,14 @@
 
 ## How to run
 
-1. ```sh
-   docker compose up
-   ```
-
-2. ```sh
-   npm i
-   ```
-
-3. ```sh
-   # starts a local server on http://localhost:8080
-    npm run dev
-   ```
+```sh
+     # starts postgres
+     docker compose up
+     # installs dependencies
+     npm i
+     # starts a local server on http://localhost:8080
+     # docs on http://localhost:8080/docs
+     npm run dev
+     # stats drizzle studio on https://local.drizzle.studio
+     npm run db:studio
+```
