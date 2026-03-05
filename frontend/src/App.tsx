@@ -1,4 +1,5 @@
 import './App.css'
+import { JobsChartPie } from './components/chart-pie'
 import { JobCalendarCard } from './components/job-calendar-card'
 import { NavTabs } from './components/nav-tabs'
 import { SummaryCard } from './components/summary-card'
@@ -41,7 +42,7 @@ function App() {
         <SummaryCard title='Improdutivos' count={0} color='yellow' />
       </section>
       <section id="productivity-charts">
-
+        <JobsChartPie />
       </section>
     </main>
   )
